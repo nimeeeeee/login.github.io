@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #fff1f3, #360d53);
+}
+
+.container {
+    width: 50%;
+    background: rgba(254, 214, 214, 0.6);
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 550; 
+    position: relative; 
+}
+
+.container form .userDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container form .userDetails .inputBox {
+    margin: 20px 0 12px 0;
+    width: calc(50% - 20px);
+}
+
+.userDetails .inputBox .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.userDetails .inputBox input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.userDetails .inputBox input:focus,
+.userDetails .inputBox input:focus{
+    border-color: #360d53;
+}
+
+form .genderDetails .genderTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .genderDetails .category {
+    width: 80%;
+    margin: 14px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.genderDetails .category label {
+    display: flex;
+}
+
+.genderDetails .category .dot {
+    height: 18px;
+    width: 18px;
+    background: grey;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button input[type="submit"] {
+    width: 30%;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    background-image: linear-gradient(135deg, #b88ed5, #360d53);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.button input[type="submit"]:hover {
+    background-image: linear-gradient(-135deg, #b88ed5, #360d53);
+} 
